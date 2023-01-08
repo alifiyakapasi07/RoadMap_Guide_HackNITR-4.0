@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width,initial-scale=1.0">
+  <title>one stop for all</title>
+  <link href="../stylesheets/contact.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <!-- /* <a href = "index.html"> <img src = " "></a> -->
+      <div class="nav-links">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li class="subnav">
+            <div class="dropdown">
+              <button class="dropbtn">ROADMAPS</button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <button class="option">Web Development</button>
+                    <div class="frontend sub-column">
+                      <button class="sub-option">Frontend</button>
+                      <div class="sub-sub-column">
+                        <a href="../sub-pages/wfrontbasic.html" target="_blank" rel="noopener noreferrer">Basic</a>
+                        <a href="../sub-pages/wfrontintermediate.html" target="_blank"
+                          rel="noopener noreferrer">Intermediate</a>
+                        <a href="../sub-pages/wfrontadvance.html" target="_blank" rel="noopener noreferrer">Advanced</a>
+                      </div>
+                    </div>
+                    <div class="backend sub-column">
+                      <button class="sub-option">Backend</button>
+                      <div class="sub-sub-column">
+                        <a href="../sub-pages/wbackbasic.html" target="_blank" rel="noopener noreferrer">Basic</a>
+                        <a href="../sub-pages/wbackintermediate.html" target="_blank"
+                          rel="noopener noreferrer">Intermediate</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <button class="option"><a href="android.html" target="_blank"
+                        rel="noopener noreferrer">Android Development</a></button>
+                  </div>
+                  <div class="column">
+                    <button class="option">Data Structures</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="./resources.html">RESOURCES</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="contact-form">
+    <br>
+    <h1>Contact Us</h1>
+
+    <!-- replace "example@mail.com" with random string provided in mail after activation  -->
+    <form action="https://formsubmit.co/6b3c124de7f8069f2af43a61fc4fd123" method="POST">
+      <label for="name">Name:</label>
+      <input id="name" type="text" class="name" placeholder="Name" aria-label="Name input" required />
+
+      <label for="email">Email-id:</label>
+      <input type="email" id="email" class="email" placeholder="example@email.com" aria-label="email id input"
+        required />
+
+      <label for="message">Your Message:</label>
+      <textarea name="Message" id="message" cols="30" rows="10" aria-label="your message input"></textarea>
+
+      <input type="submit" class="submit-btn" aria-label="submit form" />
+    </form>
+  </div>
+</body>
