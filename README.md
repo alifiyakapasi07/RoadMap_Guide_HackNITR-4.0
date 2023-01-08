@@ -1,6 +1,6 @@
 # Road Map Guide
 
-![image](https://user-images.githubusercontent.com/79797000/139563343-b6219020-4f84-442c-89e2-58f4e164ff17.png)
+![image](inedx.png)
 
 A project made for Hackathon "HackNITR 4.0 ".
 
