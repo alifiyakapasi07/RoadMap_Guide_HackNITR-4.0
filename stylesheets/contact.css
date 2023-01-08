@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap");
+@import url("style.css");
+
+body {
+  font-family: "Poppins", san-serif;
+  font-size: 17px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+/* ==================== navbar ================== */
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+
+  background: var(--white);
+  z-index: 99;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 0;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+.nav-links ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Space Grotesk", monospace;
+  font-size: 1.2rem;
+}
+.nav-links ul li::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #5274ff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* ------- subnav ------ */
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: transparent;
+  border: none;
+  font-family: "Space Grotesk", monospace;
+  font-size: 1.2rem;
+}
+
+.dropdown-content {
+  display: none;
+  /* display: block; */
+  text-align: center;
+  background: var(--light-blue);
+  color: var(--bright-blue);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  font: 500 1rem var(--font-heading), monospace;
+
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 100vh;
+  padding: 2rem;
+  z-index: 2;
+}
+.show {
+  display: block;
+}
+
+.dropdown-content .row {
+  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.dropdown-content .column {
+  flex-basis: 30%;
+}
+
+.dropdown-content .column .option {
+  border: 1px solid var(--bright-blue);
+  background: transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px;
+  height: 30%;
+  width: 100%;
+}
+
+.column .sub-column {
+  display: none;
+}
+
+.column:hover .sub-column {
+  display: flex;
+}
+
+.column .sub-column {
+  position: relative;
+}
+
+.column .sub-option {
+  background: var(--white);
+  border: none;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.column .sub-option:hover {
+  background: var(--yellow);
+}
+
+.column .sub-sub-column {
+  display: none;
+  background: var(--white);
+  border-radius: 5px;
+
+  position: absolute;
+  left: 80%;
+  top: 10px;
+  z-index: 1;
+  /* display: flex; */
+  flex-direction: column;
+}
+
+.column .sub-column:hover .sub-sub-column {
+  display: flex;
+}
+
+.sub-sub-column a {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid transparent;
+}
+
+.sub-sub-column a:hover {
+  border: 2px solid var(--range);
+}
+
+/* on scroll */
+.nav-scroll {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: var(--white);
+  transition: all 0.2s ease-in-out;
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* =========== form ================ */
+.contact-form {
+  width: 30%;
+}
+
+.contact-form > form {
+  padding: 3rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffed99;
+  border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form label {
+  align-self: flex-start;
+}
+
+input.submit-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background-color: #022e57;
+  color: #00ead3;
+  box-shadow: 2px 2px 10px rgb(158, 158, 92);
+}
+
+.submit-btn:hover {
+  background-color: #005a8d;
+  transition: 0.2s linear;
+}
+
+/* media queries */
+@media screen and (max-width: 1050px) {
+  .contact-form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact-form {
+    width: 80%;
+  }
+}
+
+form {
+  background-color: #caf68a !important;
+}
