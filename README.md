@@ -8,6 +8,6 @@ In this techie world, a newbie requires a guide or roadmap to help him choose a 
 # Documentation of Project 
 https://docs.google.com/presentation/d/1ETaZ5NXZr5O5qn89heBAO3kQuMqjDUMb/edit?usp=drivesdk&ouid=108030091787411594238&rtpof=true&sd=true
 # BY-
-###    Alifiya Kapasi
-###    Saba Langa
-###    Niyati Kaneriya
+###    [@Alifiya Kapasi](https://github.com/alifiyakapasi07)
+###    [@Saba Langa](https://github.com/sabalanga06)
+###    [@Niyati Kaneriya](https://github.com/Niyati3012)
